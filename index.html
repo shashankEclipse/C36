@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Zen</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-    <script src="p5.play.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
 
 
-    <script>
-      // Your web app's Firebase configuration
-      //add here
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjUM8_QGV9pN4AwmjX12l93IGRqaF-O4Y",
+    authDomain: "c-36-f2132.firebaseapp.com",
+    databaseURL: "https://c-36-f2132.firebaseio.com",
+    projectId: "c-36-f2132",
+    storageBucket: "c-36-f2132.appspot.com",
+    messagingSenderId: "271923056611",
+    appId: "1:271923056611:web:16641e9b45a7c0cc439ad6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/Form.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/Player.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
   </head>
   <body>
-    <script src="sketch.js"></script>
+      <script src="sketch.js"></script>
   </body>
 </html>
